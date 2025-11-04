@@ -336,3 +336,17 @@ body {
         height: 400px;
     }
 }
+.contact-btn {
+  background-color: #FF7533;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #e65f20;
+  box-shadow: 0 4px 10px rgba(255, 117, 51, 0.3);
+}
