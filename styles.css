@@ -128,6 +128,15 @@ body {
     position: relative;
 }
 
+/* Ensure images dropped into phone screens fit nicely */
+.phone-screen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* keep full screenshot visible; change to 'cover' if you prefer edge-to-edge */
+    display: block;
+    border-radius: 25px; /* match screen rounding */
+}
+
 .app-header {
     background: linear-gradient(135deg, #FF7533
  0%, #ff7a95 100%);
@@ -162,11 +171,13 @@ body {
     margin-bottom: 20px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* center the stat items */
+    gap: 24px; /* add spacing between items to avoid crowding */
 }
 
 .stat-item {
     text-align: center;
+    min-width: 120px; /* ensure width for proper alignment */
 }
 
 .stat-value {
@@ -175,11 +186,13 @@ body {
     color: #FF7533
 ;
     margin-bottom: 5px;
+    display: block; /* keep value and label on separate lines */
 }
 
 .stat-label {
     font-size: 0.9rem;
     color: #666666;
+    display: block; /* ensure label sits under the value */
 }
 
 .activity-feed {
@@ -406,11 +419,12 @@ header {
 }
 
 .contact-btn {
-  background-color: #FF7533;
+  background: linear-gradient(135deg, #FF7533 0%, #ff7a95 100%);
   color: white;
-  padding: 10px 22px;
-  border-radius: 25px;
-  font-weight: 500;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-flex;
@@ -418,13 +432,18 @@ header {
   justify-content: center;
   white-space: nowrap;
   line-height: 1;
-  font-size: 16px;
-  box-shadow: 0 4px 10px rgba(255, 117, 51, 0.3);
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 10px 30px rgba(255, 90, 118, 0.3);
 }
 
 .contact-btn:hover {
-  background-color: #e65f20;
-  box-shadow: 0 4px 10px rgba(255, 117, 51, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 40px rgba(255, 90, 118, 0.4);
+}
+
+.contact-btn:active {
+  transform: translateY(0);
 }
 
 /* Footer Styles */
