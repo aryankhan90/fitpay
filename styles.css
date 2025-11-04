@@ -489,14 +489,14 @@ footer p {
 .rewards-content h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #f8f9fa;
+    color: #6a6a6b;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
 .rewards-content p {
     font-size: 1.2rem;
-    color: #f8f9fa;
+    color: #585859;
     line-height: 1.6;
 }
 
@@ -513,7 +513,7 @@ footer p {
 .rewards-section-3 {
     padding: 80px 20px;
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #5a5b5b;
 }
 
 
