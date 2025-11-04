@@ -610,3 +610,7 @@ footer p {
     border-radius: 20px;
   }
 }
+footer a {
+  color: #ffffff; /* or any color you want */
+  text-decoration: none;
+}
